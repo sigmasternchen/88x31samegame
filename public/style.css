@@ -10,12 +10,18 @@
     font-family: sans-serif;
 }
 
+.description {
+    width: calc(var(--size-x) * var(--tile-width) + var(--padding) * (var(--size-x) + 1));
+    margin-bottom: 10px;
+}
+
 .meta-info {
     margin-top: 30px;
 }
 
 .game-info {
-    font-size: 40px;
+    margin: 10px 0 10px 0;
+    font-size: 20px;
 }
 
 .gameover {
