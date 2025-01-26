@@ -1,0 +1,19 @@
+:root {
+    --tile-width: 88px;
+    --tile-height: 31px;
+    --size-x: 10;
+    --size-y: 20;
+    --padding: 2px;
+}
+
+.board {
+    width: calc(var(--size-x) * var(--tile-width) + var(--padding) * (var(--size-x) - 1));
+    height: calc(var(--size-y) * var(--tile-height) + var(--padding) * (var(--size-y) - 1));
+    position: relative;
+}
+
+.tile {
+    position: absolute;
+    cursor: pointer;
+    transition: bottom 0.5s;
+}

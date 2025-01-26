@@ -1,0 +1,14 @@
+{
+  "name": "88x31samegame",
+  "version": "1.0.0",
+  "main": "src/main.ts",
+  "scripts": {
+    "build": "node src/build/esbuild.config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "esbuild": "^0.23.0"
+  }
+}
