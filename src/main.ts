@@ -16,5 +16,10 @@ function getRandomBanners(n: number): string[] {
 }
 
 window.addEventListener("load", () => {
-    new Game(document.querySelector(".board"), getRandomBanners(5));
+    new Game(
+        document.querySelector(".board"),
+        document.querySelector(".game-info"),
+        document.querySelector(".gameover"),
+        getRandomBanners(5)
+    );
 });

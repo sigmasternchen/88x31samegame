@@ -64,6 +64,16 @@ export class Board {
         }
 
         this.applyGravity();
-        this.render();
+    }
+
+    public hasMove(n: number) {
+        for (let y = 0; y < this.height; y++) {
+            for (let x = 0; x < this.width; x++) {
+                if (this.board[y][x]?.findSimilarNeighbors([])?.length >= n) {
+                    return true;
+                }
+            }
+        }
+        return false;
     }
 }

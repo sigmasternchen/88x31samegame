@@ -6,9 +6,32 @@
     --padding: 2px;
 }
 
+* {
+    font-family: sans-serif;
+}
+
+.game-info {
+    font-size: 40px;
+}
+
+.gameover {
+    display: none;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.5);
+    font-size: 30px;
+    text-align: center;
+    padding-top: 20%;
+    z-index: 100;
+}
+
 .board {
-    width: calc(var(--size-x) * var(--tile-width) + var(--padding) * (var(--size-x) - 1));
-    height: calc(var(--size-y) * var(--tile-height) + var(--padding) * (var(--size-y) - 1));
+    width: calc(var(--size-x) * var(--tile-width) + var(--padding) * (var(--size-x) + 1));
+    height: calc(var(--size-y) * var(--tile-height) + var(--padding) * (var(--size-y) + 1));
     position: relative;
 }
 
@@ -16,4 +39,7 @@
     position: absolute;
     cursor: pointer;
     transition: bottom 0.5s;
+    object-fit: cover;
+    width: var(--tile-width);
+    height: var(--tile-height);
 }
